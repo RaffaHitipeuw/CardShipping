@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping Details Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container-shipping">
+      <form action="">
+        <div class="form-container">
+          <h2>Shipping Details</h2>
+          <div class="form-group saved-address">
+            <label for="saved-address">Use saved address</label>
+            <select id="saved-address">
+              <option value="">Select an address</option>
+              <option value="address1">123, Electric Avenue</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="first-line">First line of address</label>
+            <input
+              type="text"
+              id="first-line"
+              name="first-line"
+              placeholder="123"
+            />
+          </div>
+          <div class="form-group">
+            <label for="street-name">Street name</label>
+            <input
+              type="text"
+              id="street-name"
+              name="street-name"
+              placeholder="Electric Avenue"
+            />
+          </div>
+          <div class="postcode-and-method">
+            <div class="form-group postcode">
+              <label for="postcode">Postcode</label>
+              <input
+                type="text"
+                id="postcode"
+                name="postcode"
+                placeholder="ABC-123"
+              />
+            </div>
+            <div class="form-group shipping-method">
+              <label for="shipping-method">Select shipping </label>
+              <select id="shipping-method" name="shipping-method">
+                <option value="">Choose shipping</option>
+                <option value="free-delivery">Free delivery</option>
+                <option value="express-delivery">Express delivery</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+          <br /><br />
+          <div class="form-actions">
+            <button type="button" class="cancel-button">Cancel order</button>
+            <button type="submit" class="payment-button">Payment</button>
+          </div>
+        </div>
+      </form>
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="product">
+          <img src="./headphone.png" alt="Sony wireless headphones" />
+          <div class="product-details">
+            <div class="product-name">
+              <h3>Sony wireless headphones</h3>
+              <p class="price" id="price">10000</p>
+            </div>
+            <div class="quantity">
+              <button class="minus" onclick="kurang(1)">&minus;</button>
+              <input type="text" value="1" id="quantity"/>
+              <button class="plus" onclick="tambah(1)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="discount" >
+          <label for="discount-code">Gift Card / Discount code</label>
+          <div class="discount-code">
+            <input type="text" id="codeVoucher" />
+            <button class="apply" onclick="buttonvoucher()">Apply</button>
+          </div>
+          <span class="applied" id="textVoucher"></span>
+        </div>
+        <div class="summary">
+          <p class="subtotal" >Sub total: <span id="subtotal">0</span></p>
+          <!-- <p>Tax: <span>0</span></p> -->
+          <p >Shipping: <span id="shipping">2000</span></p>
+          <p>Discount: <span id="discount">0</span></p>
+          <p class="total">Total: <span id="total">0</span></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Imam Sandy Bachtiar 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- contoh code start -->
+
+<!-- contoh code end -->
