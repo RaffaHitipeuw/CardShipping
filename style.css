@@ -232,7 +232,7 @@ select#saved-address {
 .discount .reject {
   display: block;
   margin-top: 10px;
-  color: blue;
+  color: red;
   font-weight: bold;
 }
 .discount .applied {

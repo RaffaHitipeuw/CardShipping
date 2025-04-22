@@ -41,11 +41,11 @@ let kurang = (num) => {
   totalElem.innerHTML = total;
 }
 
-
 function buttonvoucher() {
   let inputvoucher = codeVoucherElem.value;
   if (inputvoucher === "abu-dzar") {
     textVoucherElem.innerHTML = "Voucher 20% Berhasil";
+    textVoucherElem.classList.remove("applied", "reject");
     textVoucherElem.classList.add("success");
     discountElem.innerHTML = 2000;
   }else if (inputvoucher === "fulan"){
@@ -59,3 +59,12 @@ function buttonvoucher() {
     textVoucherElem.classList.add("reject");
   }
 }
+
+
+
+
+
+
+
+
+
